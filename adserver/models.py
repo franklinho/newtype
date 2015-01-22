@@ -32,5 +32,6 @@ class Click(models.Model):
     product_id = models.CharField(max_length = 200)
     campaign_id = models.CharField(max_length = 200)
     converted = models.BooleanField(default=False)
+    element_ids = models.CharField(max_length = 200)
     # def __unicode__(self):              # __unicode__ on Python 2
         # return self.idfa
