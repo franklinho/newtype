@@ -7,6 +7,8 @@ from adserver.models import Intent, Click
 
 # Create your views here.
 
+
+
 def index(request):
     return HttpResponse("Hello, world. You're at the adserver index.")
 
@@ -67,12 +69,16 @@ def click(request):
             c = Click(idfa=idfa, product_id=product_id, advertiser_id = advertiser_id, campaign_id = campaign_id, converted=False, element_ids = element_ids)
             c.save()
             if r is not None:
-                return HttpResponseRedirect(r)
+                res = HttpResponse(r, status=302)
+                res['Location'] = r
+                return res
             else:
                 return HttpResponse("Tracking Click. IDFA is %s. Product ID is %s. Advertiser ID is %s. Campaign ID is %s. Element IDs are %s" % (idfa,product_id,advertiser_id,campaign_id, element_ids))
         else:
             if r is not None:
-                return HttpResponseRedirect(r)
+                res = HttpResponse(r, status=302)
+                res['Location'] = r
+                return res
             else:
                 return HttpResponse("Click for this combination already exists. IDFA is %s. Product ID is %s. Advertiser ID is %s" % (idfa,product_id,advertiser_id))
     elif r is not None:
