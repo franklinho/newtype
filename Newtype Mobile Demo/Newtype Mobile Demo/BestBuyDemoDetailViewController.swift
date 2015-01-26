@@ -10,6 +10,7 @@ import UIKit
 
 class BestBuyDemoDetailViewController: UIViewController {
     
+    @IBOutlet weak var purchaseCompleteView: UIView!
     @IBOutlet weak var buyButton: UIButton!
     var productID : Int?
 
@@ -18,11 +19,19 @@ class BestBuyDemoDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.purchaseCompleteView.hidden = true
         
         var buttonLayer : CALayer = buyButton.layer
         
         buttonLayer.masksToBounds = true
         buttonLayer.cornerRadius = 5.0
+        
+        var purchaseCompleteLayer : CALayer = purchaseCompleteView.layer
+        
+        purchaseCompleteLayer.masksToBounds = true
+        purchaseCompleteLayer.cornerRadius = 10.0
+        purchaseCompleteLayer.borderColor = UIColor.blackColor().CGColor
+        purchaseCompleteLayer.borderWidth = 5.0
         
         if self.productID != nil {
             self.productDetailImageView.image = UIImage(named: "\(productID!)d.jpg")
@@ -50,6 +59,13 @@ class BestBuyDemoDetailViewController: UIViewController {
             self.productDetailImageView.image = UIImage(named: "\(productID!)d.jpg")
             println("\(productID)d.jpg")
         }
+    }
+    @IBAction func buyButtonTapped(sender: AnyObject) {
+        self.purchaseCompleteView.hidden = false
+    }
+    @IBAction func purchaseCompleteCloseButtonTapped(sender: AnyObject) {
+        
+        self.purchaseCompleteView.hidden = true
     }
 
 }

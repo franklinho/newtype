@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DDA43F7C1A76D0560074FDCD /* BestBuyDemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA43F7B1A76D0560074FDCD /* BestBuyDemoDetailViewController.swift */; };
 		DDA43F801A76D7050074FDCD /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA43F7F1A76D7050074FDCD /* cart.png */; };
+		DDA43F821A76DBD80074FDCD /* close_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA43F811A76DBD80074FDCD /* close_button.png */; };
 		DDDC81A21A76BB64009B233A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDC81A11A76BB64009B233A /* AppDelegate.swift */; };
 		DDDC81A41A76BB64009B233A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDC81A31A76BB64009B233A /* ViewController.swift */; };
 		DDDC81A71A76BB64009B233A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDC81A51A76BB64009B233A /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		DDA43F7B1A76D0560074FDCD /* BestBuyDemoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestBuyDemoDetailViewController.swift; sourceTree = "<group>"; };
 		DDA43F7F1A76D7050074FDCD /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
+		DDA43F811A76DBD80074FDCD /* close_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_button.png; sourceTree = "<group>"; };
 		DDDC819C1A76BB63009B233A /* Newtype Mobile Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Newtype Mobile Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDC81A01A76BB64009B233A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDDC81A11A76BB64009B233A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				DDA43F7F1A76D7050074FDCD /* cart.png */,
+				DDA43F811A76DBD80074FDCD /* close_button.png */,
 				DDDC81C51A76C4C6009B233A /* Best Buy Images */,
 				DDDC81C31A76C077009B233A /* BestBuyDemoViewController.swift */,
 				DDA43F7B1A76D0560074FDCD /* BestBuyDemoDetailViewController.swift */,
@@ -243,6 +246,7 @@
 				DDDC81D51A76C6B0009B233A /* 4349004d.jpg in Resources */,
 				DDDC81D11A76C6B0009B233A /* 3478006D.jpg in Resources */,
 				DDDC81A71A76BB64009B233A /* Main.storyboard in Resources */,
+				DDA43F821A76DBD80074FDCD /* close_button.png in Resources */,
 				DDDC81D01A76C6B0009B233A /* 3478006.jpg in Resources */,
 				DDDC81D41A76C6B0009B233A /* 4349004.jpg in Resources */,
 				DDDC81CE1A76C6B0009B233A /* 3365028.jpg in Resources */,

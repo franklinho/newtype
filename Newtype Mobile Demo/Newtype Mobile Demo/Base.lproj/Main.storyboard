@@ -153,6 +153,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gTo-MI-LW8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="548"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jm-nF-nfu">
                                 <rect key="frame" x="220" y="540" width="160" height="44"/>
                                 <color key="backgroundColor" red="0.9607994002525253" green="0.93582712554180403" blue="0.01837767650483697" alpha="1" colorSpace="calibratedRGB"/>
@@ -164,16 +167,56 @@
                                 <state key="normal" title="  Buy" image="cart.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="buyButtonTapped:" destination="GLd-NP-bGE" eventType="touchUpInside" id="pkD-cs-ME7"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gTo-MI-LW8">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="548"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Mj-gO-BfX">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sr1-s5-CAM">
+                                        <rect key="frame" x="148" y="8" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="J2M-As-bGB"/>
+                                            <constraint firstAttribute="width" constant="44" id="dgo-Lt-ktl"/>
+                                        </constraints>
+                                        <state key="normal" image="close_button.png">
+                                            <color key="titleColor" red="0.96079940029999999" green="0.93582712550000002" blue="0.018377676499999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="purchaseCompleteCloseButtonTapped:" destination="GLd-NP-bGE" eventType="touchUpInside" id="cUj-eB-PY3"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchase Complete" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7g-FQ-anj">
+                                        <rect key="frame" x="15" y="67" width="171.5" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="171.5" id="2Ee-ou-CT4"/>
+                                            <constraint firstAttribute="height" constant="65" id="jc5-Ki-iB0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88020833333333337" green="0.88020833333333337" blue="0.88020833333333337" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sr1-s5-CAM" secondAttribute="trailing" constant="8" id="H0B-7K-JCz"/>
+                                    <constraint firstAttribute="height" constant="200" id="Oea-8F-jAQ"/>
+                                    <constraint firstAttribute="width" constant="200" id="a2O-3X-0ky"/>
+                                    <constraint firstItem="sr1-s5-CAM" firstAttribute="top" secondItem="1Mj-gO-BfX" secondAttribute="top" constant="8" id="hHH-BW-nHN"/>
+                                    <constraint firstAttribute="centerY" secondItem="R7g-FQ-anj" secondAttribute="centerY" id="keA-77-MlE"/>
+                                    <constraint firstAttribute="centerX" secondItem="R7g-FQ-anj" secondAttribute="centerX" id="nVh-32-tIW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3jm-nF-nfu" firstAttribute="top" secondItem="gTo-MI-LW8" secondAttribute="bottom" constant="-8" id="2ZO-Uy-bOx"/>
+                            <constraint firstAttribute="centerY" secondItem="1Mj-gO-BfX" secondAttribute="centerY" id="C4F-mg-syX"/>
                             <constraint firstItem="uZm-Xn-h04" firstAttribute="top" secondItem="gTo-MI-LW8" secondAttribute="bottom" id="D3h-NJ-lvF"/>
                             <constraint firstItem="uZm-Xn-h04" firstAttribute="top" secondItem="3jm-nF-nfu" secondAttribute="bottom" constant="16" id="I2h-cv-aRn"/>
+                            <constraint firstAttribute="centerX" secondItem="1Mj-gO-BfX" secondAttribute="centerX" id="Jrj-Dn-W4z"/>
                             <constraint firstAttribute="centerX" secondItem="3jm-nF-nfu" secondAttribute="centerX" id="Lh0-OX-vDK"/>
                             <constraint firstItem="gTo-MI-LW8" firstAttribute="top" secondItem="rYv-hE-zaK" secondAttribute="topMargin" id="TaF-1q-MS9"/>
                             <constraint firstItem="gTo-MI-LW8" firstAttribute="top" secondItem="h9g-DQ-dBv" secondAttribute="bottom" id="Y3u-PI-9Yg"/>
@@ -192,6 +235,7 @@
                     <connections>
                         <outlet property="buyButton" destination="3jm-nF-nfu" id="8GO-oC-c0d"/>
                         <outlet property="productDetailImageView" destination="gTo-MI-LW8" id="Vra-Lf-TGl"/>
+                        <outlet property="purchaseCompleteView" destination="1Mj-gO-BfX" id="W0U-rD-Omw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHp-aM-RvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -220,5 +264,6 @@
     <resources>
         <image name="3365028.jpg" width="640" height="520"/>
         <image name="cart.png" width="24" height="24"/>
+        <image name="close_button.png" width="256" height="256"/>
     </resources>
 </document>
