@@ -13,6 +13,7 @@ class BestBuyDemoViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var bestBuyDemoTableView: UITableView!
     
     var bestBuyProducts = [3365028,3478006,3986118,4349004]
+    var bestBuyProductNames = ["Nikon - Coolpix L830", "Nikon - Coolpix S9600", "Canon - PowerShot SX-700 HS", "Sony - DSC-W800"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,8 @@ class BestBuyDemoViewController: UIViewController, UITableViewDelegate, UITableV
         self.bestBuyDemoTableView.dataSource = self
         
         self.bestBuyDemoTableView.rowHeight = 260.0
+        
+        self.title = "Best Buy"
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,6 +54,8 @@ class BestBuyDemoViewController: UIViewController, UITableViewDelegate, UITableV
             var bestBuyDetailViewController : BestBuyDemoDetailViewController = segue.destinationViewController as BestBuyDemoDetailViewController
             var productIndex = bestBuyDemoTableView.indexPathForSelectedRow()?.row
             bestBuyDetailViewController.productID = self.bestBuyProducts[productIndex!]
+            
+            bestBuyDetailViewController.title = bestBuyProductNames[productIndex!]
         }
     }
     
