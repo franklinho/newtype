@@ -16,7 +16,7 @@
 		DDDC81A91A76BB64009B233A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDDC81A81A76BB64009B233A /* Images.xcassets */; };
 		DDDC81AC1A76BB64009B233A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDC81AA1A76BB64009B233A /* LaunchScreen.xib */; };
 		DDDC81B81A76BB64009B233A /* Newtype_Mobile_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDC81B71A76BB64009B233A /* Newtype_Mobile_DemoTests.swift */; };
-		DDDC81C21A76BC0E009B233A /* DemosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDC81C11A76BC0E009B233A /* DemosTableViewCell.swift */; };
+		DDDC81C21A76BC0E009B233A /* BestBuyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDC81C11A76BC0E009B233A /* BestBuyTableViewCell.swift */; };
 		DDDC81C41A76C077009B233A /* BestBuyDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDC81C31A76C077009B233A /* BestBuyDemoViewController.swift */; };
 		DDDC81CE1A76C6B0009B233A /* 3365028.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDDC81C61A76C6B0009B233A /* 3365028.jpg */; };
 		DDDC81CF1A76C6B0009B233A /* 3365028d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDDC81C71A76C6B0009B233A /* 3365028d.jpg */; };
@@ -27,6 +27,12 @@
 		DDDC81D41A76C6B0009B233A /* 4349004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDDC81CC1A76C6B0009B233A /* 4349004.jpg */; };
 		DDDC81D51A76C6B0009B233A /* 4349004d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDDC81CD1A76C6B0009B233A /* 4349004d.jpg */; };
 		DDDC81D71A76C763009B233A /* BestBuyDemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDC81D61A76C763009B233A /* BestBuyDemoTableViewCell.swift */; };
+		DDE3AB0C1A770F20005FD592 /* candy_gameplay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDE3AB081A770F20005FD592 /* candy_gameplay.jpg */; };
+		DDE3AB0D1A770F20005FD592 /* candy_lollipop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDE3AB091A770F20005FD592 /* candy_lollipop.jpg */; };
+		DDE3AB0E1A770F20005FD592 /* candy_gold.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDE3AB0A1A770F20005FD592 /* candy_gold.jpg */; };
+		DDE3AB0F1A770F20005FD592 /* candy_stripelollipop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDE3AB0B1A770F20005FD592 /* candy_stripelollipop.jpg */; };
+		DDE3AB111A771001005FD592 /* CandyCrushTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE3AB101A771001005FD592 /* CandyCrushTableViewCell.swift */; };
+		DDE3AB141A771224005FD592 /* CandyCrushDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE3AB131A771224005FD592 /* CandyCrushDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +59,7 @@
 		DDDC81B11A76BB64009B233A /* Newtype Mobile DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Newtype Mobile DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDC81B61A76BB64009B233A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDDC81B71A76BB64009B233A /* Newtype_Mobile_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newtype_Mobile_DemoTests.swift; sourceTree = "<group>"; };
-		DDDC81C11A76BC0E009B233A /* DemosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemosTableViewCell.swift; sourceTree = "<group>"; };
+		DDDC81C11A76BC0E009B233A /* BestBuyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestBuyTableViewCell.swift; sourceTree = "<group>"; };
 		DDDC81C31A76C077009B233A /* BestBuyDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BestBuyDemoViewController.swift; path = ../BestBuyDemoViewController.swift; sourceTree = "<group>"; };
 		DDDC81C61A76C6B0009B233A /* 3365028.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3365028.jpg; sourceTree = "<group>"; };
 		DDDC81C71A76C6B0009B233A /* 3365028d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3365028d.jpg; sourceTree = "<group>"; };
@@ -64,6 +70,12 @@
 		DDDC81CC1A76C6B0009B233A /* 4349004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4349004.jpg; sourceTree = "<group>"; };
 		DDDC81CD1A76C6B0009B233A /* 4349004d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4349004d.jpg; sourceTree = "<group>"; };
 		DDDC81D61A76C763009B233A /* BestBuyDemoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestBuyDemoTableViewCell.swift; sourceTree = "<group>"; };
+		DDE3AB081A770F20005FD592 /* candy_gameplay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = candy_gameplay.jpg; sourceTree = "<group>"; };
+		DDE3AB091A770F20005FD592 /* candy_lollipop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = candy_lollipop.jpg; sourceTree = "<group>"; };
+		DDE3AB0A1A770F20005FD592 /* candy_gold.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = candy_gold.jpg; sourceTree = "<group>"; };
+		DDE3AB0B1A770F20005FD592 /* candy_stripelollipop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = candy_stripelollipop.jpg; sourceTree = "<group>"; };
+		DDE3AB101A771001005FD592 /* CandyCrushTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandyCrushTableViewCell.swift; sourceTree = "<group>"; };
+		DDE3AB131A771224005FD592 /* CandyCrushDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandyCrushDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,15 +117,16 @@
 		DDDC819E1A76BB63009B233A /* Newtype Mobile Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DDE3AB121A771073005FD592 /* BestBuyDemo */,
+				DDE3AB071A770F0B005FD592 /* Candy Crush Images */,
 				DDA43F7F1A76D7050074FDCD /* cart.png */,
 				DDA43F811A76DBD80074FDCD /* close_button.png */,
-				DDDC81C51A76C4C6009B233A /* Best Buy Images */,
-				DDDC81C31A76C077009B233A /* BestBuyDemoViewController.swift */,
-				DDA43F7B1A76D0560074FDCD /* BestBuyDemoDetailViewController.swift */,
 				DDDC81A11A76BB64009B233A /* AppDelegate.swift */,
 				DDDC81A31A76BB64009B233A /* ViewController.swift */,
 				DDDC81A51A76BB64009B233A /* Main.storyboard */,
-				DDDC81C11A76BC0E009B233A /* DemosTableViewCell.swift */,
+				DDE3AB131A771224005FD592 /* CandyCrushDemoViewController.swift */,
+				DDDC81C11A76BC0E009B233A /* BestBuyTableViewCell.swift */,
+				DDE3AB101A771001005FD592 /* CandyCrushTableViewCell.swift */,
 				DDDC81A81A76BB64009B233A /* Images.xcassets */,
 				DDDC81AA1A76BB64009B233A /* LaunchScreen.xib */,
 				DDDC81D61A76C763009B233A /* BestBuyDemoTableViewCell.swift */,
@@ -160,6 +173,27 @@
 				DDDC81CD1A76C6B0009B233A /* 4349004d.jpg */,
 			);
 			name = "Best Buy Images";
+			sourceTree = "<group>";
+		};
+		DDE3AB071A770F0B005FD592 /* Candy Crush Images */ = {
+			isa = PBXGroup;
+			children = (
+				DDE3AB081A770F20005FD592 /* candy_gameplay.jpg */,
+				DDE3AB091A770F20005FD592 /* candy_lollipop.jpg */,
+				DDE3AB0A1A770F20005FD592 /* candy_gold.jpg */,
+				DDE3AB0B1A770F20005FD592 /* candy_stripelollipop.jpg */,
+			);
+			name = "Candy Crush Images";
+			sourceTree = "<group>";
+		};
+		DDE3AB121A771073005FD592 /* BestBuyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DDDC81C31A76C077009B233A /* BestBuyDemoViewController.swift */,
+				DDA43F7B1A76D0560074FDCD /* BestBuyDemoDetailViewController.swift */,
+				DDDC81C51A76C4C6009B233A /* Best Buy Images */,
+			);
+			name = BestBuyDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,15 +277,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDDC81CF1A76C6B0009B233A /* 3365028d.jpg in Resources */,
+				DDE3AB0D1A770F20005FD592 /* candy_lollipop.jpg in Resources */,
 				DDDC81D51A76C6B0009B233A /* 4349004d.jpg in Resources */,
 				DDDC81D11A76C6B0009B233A /* 3478006D.jpg in Resources */,
 				DDDC81A71A76BB64009B233A /* Main.storyboard in Resources */,
 				DDA43F821A76DBD80074FDCD /* close_button.png in Resources */,
 				DDDC81D01A76C6B0009B233A /* 3478006.jpg in Resources */,
+				DDE3AB0E1A770F20005FD592 /* candy_gold.jpg in Resources */,
 				DDDC81D41A76C6B0009B233A /* 4349004.jpg in Resources */,
+				DDE3AB0F1A770F20005FD592 /* candy_stripelollipop.jpg in Resources */,
 				DDDC81CE1A76C6B0009B233A /* 3365028.jpg in Resources */,
 				DDDC81D31A76C6B0009B233A /* 3986118d.jpg in Resources */,
 				DDDC81AC1A76BB64009B233A /* LaunchScreen.xib in Resources */,
+				DDE3AB0C1A770F20005FD592 /* candy_gameplay.jpg in Resources */,
 				DDDC81D21A76C6B0009B233A /* 3986118.jpg in Resources */,
 				DDA43F801A76D7050074FDCD /* cart.png in Resources */,
 				DDDC81A91A76BB64009B233A /* Images.xcassets in Resources */,
@@ -272,10 +310,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE3AB111A771001005FD592 /* CandyCrushTableViewCell.swift in Sources */,
+				DDE3AB141A771224005FD592 /* CandyCrushDemoViewController.swift in Sources */,
 				DDDC81C41A76C077009B233A /* BestBuyDemoViewController.swift in Sources */,
 				DDDC81A41A76BB64009B233A /* ViewController.swift in Sources */,
 				DDDC81D71A76C763009B233A /* BestBuyDemoTableViewCell.swift in Sources */,
-				DDDC81C21A76BC0E009B233A /* DemosTableViewCell.swift in Sources */,
+				DDDC81C21A76BC0E009B233A /* BestBuyTableViewCell.swift in Sources */,
 				DDDC81A21A76BB64009B233A /* AppDelegate.swift in Sources */,
 				DDA43F7C1A76D0560074FDCD /* BestBuyDemoDetailViewController.swift in Sources */,
 			);

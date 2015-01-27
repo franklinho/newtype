@@ -12,8 +12,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var demosTableView: UITableView!
     
-    var demos = ["Best Buy", "Clash of Clans"]
-    var demosCategories = ["Best Buy": "E-Commerce","Clash of Clans":"Gaming"]
+    var demos = ["Best Buy", "Candy Crush Soda Saga"]
+    var demosCategories = ["Best Buy": "E-Commerce","Candy Crush Soda Saga":"Gaming"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +28,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = demosTableView.dequeueReusableCellWithIdentifier("DemosTableViewCell") as DemosTableViewCell
+        
         
         var demo = demos[indexPath.row]
         
-        cell.demoNameLabel.text = demo as String
-        cell.demoCategoryLabel.text = demosCategories[demo]
+        var cell : AnyObject
         
-        return cell
+        if demo == "Best Buy" {
+            cell = demosTableView.dequeueReusableCellWithIdentifier("BestBuyTableViewCell") as BestBuyTableViewCell
+            (cell as BestBuyTableViewCell).demoNameLabel.text = demo as String
+            (cell as BestBuyTableViewCell).demoCategoryLabel.text = demosCategories[demo]
+            
+        } else {
+            cell = demosTableView.dequeueReusableCellWithIdentifier("CandyCrushTableViewCell") as CandyCrushTableViewCell
+            (cell as CandyCrushTableViewCell).demoNameLabel.text = demo as String
+            (cell as CandyCrushTableViewCell).demoCategoryLabel.text = demosCategories[demo]
+
+        }
+        
+        
+        
+        return cell as UITableViewCell
+        
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -25,6 +25,8 @@ class BestBuyDemoDetailViewController: UIViewController {
         
         buttonLayer.masksToBounds = true
         buttonLayer.cornerRadius = 5.0
+        buttonLayer.borderColor = UIColor.blackColor().CGColor
+        buttonLayer.borderWidth = 2.0
         
         var purchaseCompleteLayer : CALayer = purchaseCompleteView.layer
         

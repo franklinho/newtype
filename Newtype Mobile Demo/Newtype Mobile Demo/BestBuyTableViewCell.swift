@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DemosTableViewCell: UITableViewCell {
+class BestBuyTableViewCell: UITableViewCell {
 
     @IBOutlet weak var demoCategoryLabel: UILabel!
     @IBOutlet weak var demoNameLabel: UILabel!
