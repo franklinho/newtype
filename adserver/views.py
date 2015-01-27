@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
-from django.template import Context, RequestContext
+from django.template import Context, RequestContext, loader
 from django.shortcuts import render_to_response, get_object_or_404
 from adserver.models import Intent, Click
 
@@ -85,3 +85,9 @@ def click(request):
         return HttpResponseRedirect(r)
     else:
         return HttpResponse("There is no redirect 'r' parameter")
+
+def ad(request):
+    template = loader.get_template('adserver/best_buy_ad_template.html')
+    context = RequestContext(request, {})
+
+    return HttpResponse(template.render(context))

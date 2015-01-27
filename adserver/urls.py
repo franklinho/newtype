@@ -6,4 +6,6 @@ urlpatterns = patterns('',
                        url(r'^$', views.index, name = 'index'),
                        url(r'^int$', views.intent, name = 'intent'),
                        url(r'^conv', views.conversion, name = 'conversion'),
-                       url(r'^clk', views.click, name = 'click'),)
+                       url(r'^clk', views.click, name = 'click'),
+                       url(r'^ad', views.ad, name = 'ad'),
+                       )
