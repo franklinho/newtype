@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import Context, RequestContext, loader
 from django.shortcuts import render_to_response, get_object_or_404
-from adserver.models import Intent, Click, Product, Element
+from adserver.models import Intent, Click, Product, Element, Campaign
 import random
 
 
@@ -91,32 +91,64 @@ def click(request):
 
 def ad(request):
     request_idfa = request.GET.get('idfa')
-    adcounter = 1# adcounter = random.randrange(2)
+    product = None
+    cta = None
     template = None
-    if adcounter == 0:
-        template = loader.get_template('adserver/best_buy_ad_template.html')
-        context = RequestContext(request, {})
-    else:
-        products = Product.objects.filter(advertiser_id='candycrush')
-        product = None
-        if request_idfa is not None:
-            intents = Intent.objects.filter(idfa=request_idfa, converted = False).order_by('-product_price')
-            if intents.count() == 0:
-                product = products[random.randrange(products.count())]
-            else:
-                product = products.filter(product_id=intents[0].product_id)[0]
+    context = None
+    campaigns = Campaign.objects.all()
+    if request_idfa is not None:
+        intents = Intent.objects.filter(idfa=request_idfa, converted = False).order_by('-product_price')
+        if intents.count() > 0:
+            product = Product.objects.filter(product_id=intents[0].product_id)[0]
+            product_price_string = str(product.product_price)
+            advertisercampaigns = campaigns.filter(advertiser_id=product.advertiser_id)
+            campaign = advertisercampaigns[random.randrange(advertisercampaigns.count())]
+            template_file = campaign.template
+            template = loader.get_template(template_file)
+            ctas = Element.objects.filter(advertiser_id=campaign.advertiser_id,element_type='cta',campaign_id = campaign.campaign_id)
+            if ctas.count() > 0:
+               cta = ctas[random.randrange(ctas.count())]
+            context = RequestContext(request, {
+                'product_name' : product.product_name,
+                'product_image_url': product.product_image_url,
+                'cta': cta.text,
+            })
         else:
+
+            adcounter = random.randrange(campaigns.count())
+            campaign = campaigns[adcounter]
+            template_file = campaign.template
+            template = loader.get_template(template_file)
+            products = Product.objects.filter(advertiser_id=campaign.advertiser_id)
+            if products.count() > 0:
+                product = products[random.randrange(products.count())]
+            ctas = Element.objects.filter(advertiser_id=campaign.advertiser_id,element_type='cta',campaign_id = campaign.campaign_id)
+            if ctas.count() > 0:
+               cta = ctas[random.randrange(ctas.count())]
+            context = RequestContext(request, {
+                'product_name' : product.product_name,
+                'product_image_url': product.product_image_url,
+                'cta': cta.text,
+            })
+    else:
+        campaigns = Campaign.objects.all()
+        adcounter = random.randrange(campaigns.count())
+        campaign = campaigns[adcounter]
+        template_file = campaign.template
+        template = loader.get_template(template_file)
+        products = Product.objects.filter(advertiser_id=campaign.advertiser_id)
+        if products.count() > 0:
             product = products[random.randrange(products.count())]
-
-
-        ctas = Element.objects.filter(advertiser_id='candycrush',element_type='cta',campaign_id = 'candycrushinterstitial')
-        cta = ctas[random.randrange(ctas.count())]
-        template = loader.get_template('adserver/candy_crush_ad_template.html')
+        ctas = Element.objects.filter(advertiser_id=campaign.advertiser_id,element_type='cta',campaign_id = campaign.campaign_id)
+        if ctas.count() > 0:
+            cta = ctas[random.randrange(ctas.count())]
         context = RequestContext(request, {
             'product_name' : product.product_name,
             'product_image_url': product.product_image_url,
             'cta': cta.text,
         })
+
+
 
 
 

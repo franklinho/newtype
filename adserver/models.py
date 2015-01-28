@@ -43,5 +43,12 @@ class Click(models.Model):
     campaign_id = models.CharField(max_length = 200)
     converted = models.BooleanField(default=False)
     element_ids = models.CharField(max_length = 200)
-    # def __unicode__(self):              # __unicode__ on Python 2
-        # return self.idfa
+
+class Campaign(models.Model):
+    active = models.BooleanField(default=True)
+    campaign_id = models.CharField(max_length = 200)
+    advertiser_id = models.CharField(max_length = 200)
+    name = models.CharField(max_length = 200)
+    template = models.CharField(max_length = 200)
+    def __unicode__(self):
+        return self.name

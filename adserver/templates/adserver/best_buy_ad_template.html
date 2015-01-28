@@ -40,7 +40,7 @@
         text-align:center;
         color: white;
         font-weight: bold;
-        font-size: 1.6em;
+        font-size: 1.3em;
     }
 
     #cta {
@@ -58,9 +58,9 @@
 </style>
 <div id="adcontainer" onclick="clickEvent()">
     <img src = "http://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Best_Buy_Logo.svg/300px-Best_Buy_Logo.svg.png" id="logo">
-    <div id="image_container"><img src="http://pisces.bbystatic.com/image2/BestBuy_US/images/products/3478/3478006_sa.jpg;canvasHeight=120;canvasWidth=210" id="image"></div>
-    <div id="text">Nikon - Coolpix S9600 16.0-Megapixel Digital Camera - Black</div>
-    <div id="cta">Buy Now!</div>
+    <div id="image_container"><img src="{{ product_image_url }}" id="image"></div>
+    <div id="text">Looking for a camera? <br>Get the {{ product_name }}</div>
+    <div id="cta">{{ cta }}</div>
 </div>
 
 <script>
