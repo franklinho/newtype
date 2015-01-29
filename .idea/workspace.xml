@@ -75,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="best_buy_ad_template.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="best_buy_ad_template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adserver/templates/adserver/best_buy_ad_template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39325842" vertical-offset="255" max-vertical-offset="1260">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state vertical-scroll-proportion="-1.75" vertical-offset="663" max-vertical-offset="1260">
+              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -97,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="candy_crush_ad_template.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="candy_crush_ad_template.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/adserver/templates/adserver/candy_crush_ad_template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.75" vertical-offset="948" max-vertical-offset="1275">
-              <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.056179777" vertical-offset="705" max-vertical-offset="1275">
+              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -155,8 +155,8 @@
         <option value="$PROJECT_DIR$/newtype_tornado_server.py" />
         <option value="$PROJECT_DIR$/adserver/views.py" />
         <option value="$PROJECT_DIR$/newtype/settings.py" />
-        <option value="$PROJECT_DIR$/adserver/templates/adserver/candy_crush_ad_template.html" />
         <option value="$PROJECT_DIR$/adserver/templates/adserver/best_buy_ad_template.html" />
+        <option value="$PROJECT_DIR$/adserver/templates/adserver/candy_crush_ad_template.html" />
       </list>
     </option>
   </component>
@@ -1027,18 +1027,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adserver/templates/adserver/candy_crush_ad_template.html">
+    <entry file="file://$PROJECT_DIR$/adserver/templates/adserver/best_buy_ad_template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.75" vertical-offset="948" max-vertical-offset="1275">
-          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+        <state vertical-scroll-proportion="-1.75" vertical-offset="663" max-vertical-offset="1260">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adserver/templates/adserver/best_buy_ad_template.html">
+    <entry file="file://$PROJECT_DIR$/adserver/templates/adserver/candy_crush_ad_template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39325842" vertical-offset="255" max-vertical-offset="1260">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.056179777" vertical-offset="705" max-vertical-offset="1275">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
           <folding />
         </state>
       </provider>
