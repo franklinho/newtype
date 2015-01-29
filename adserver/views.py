@@ -99,7 +99,7 @@ def ad(request):
     if request_idfa is not None:
         intents = Intent.objects.filter(idfa=request_idfa, converted = False).order_by('-product_price')
         if intents.count() > 0:
-            product = Product.objects.filter(product_id=intents[0].product_id)[0]
+            product = Product.objects.filter(product_id=int(intents[0].product_id))[0]
             product_price_string = str(product.product_price)
             advertisercampaigns = campaigns.filter(advertiser_id=product.advertiser_id)
             campaign = advertisercampaigns[random.randrange(advertisercampaigns.count())]
