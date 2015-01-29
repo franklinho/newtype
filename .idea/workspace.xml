@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/adserver/templates/adserver/best_buy_ad_template.html" description="&#10;{#    #image_container {#}&#10;{#        margin-left:..." line="15" />
+    <bookmark url="file://$PROJECT_DIR$/adserver/templates/adserver/best_buy_ad_template.html" description="&#10;{#    #image_container {#}&#10;{#        margin-left:..." line="20" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c2d81e9-8fa1-4162-b9f5-8affd31d27cd" name="Default" comment="" />
@@ -53,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newtype/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="677" max-vertical-offset="1410">
+            <state vertical-scroll-proportion="-3.2592592" vertical-offset="677" max-vertical-offset="1410">
               <caret line="51" column="59" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
               <folding />
             </state>
@@ -75,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="best_buy_ad_template.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="best_buy_ad_template.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/adserver/templates/adserver/best_buy_ad_template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1125">
-              <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.2247191" vertical-offset="0" max-vertical-offset="1200">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -100,8 +100,8 @@
       <file leaf-file-name="candy_crush_ad_template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adserver/templates/adserver/candy_crush_ad_template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="1155">
-              <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
+            <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="1215">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -152,11 +152,11 @@
         <option value="$PROJECT_DIR$/adserver/templates/adserver/adtemplate.html" />
         <option value="$PROJECT_DIR$/adserver/models.py" />
         <option value="$PROJECT_DIR$/adserver/admin.py" />
-        <option value="$PROJECT_DIR$/adserver/templates/adserver/candy_crush_ad_template.html" />
-        <option value="$PROJECT_DIR$/adserver/templates/adserver/best_buy_ad_template.html" />
         <option value="$PROJECT_DIR$/newtype_tornado_server.py" />
         <option value="$PROJECT_DIR$/adserver/views.py" />
         <option value="$PROJECT_DIR$/newtype/settings.py" />
+        <option value="$PROJECT_DIR$/adserver/templates/adserver/candy_crush_ad_template.html" />
+        <option value="$PROJECT_DIR$/adserver/templates/adserver/best_buy_ad_template.html" />
       </list>
     </option>
   </component>
@@ -250,6 +250,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="newtype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newtype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newtype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -969,22 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adserver/templates/adserver/candy_crush_ad_template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="1155">
-          <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adserver/templates/adserver/best_buy_ad_template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1125">
-          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newtype_tornado_server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
@@ -1015,8 +1021,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/newtype/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="677" max-vertical-offset="1410">
+        <state vertical-scroll-proportion="-3.2592592" vertical-offset="677" max-vertical-offset="1410">
           <caret line="51" column="59" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adserver/templates/adserver/candy_crush_ad_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="1215">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adserver/templates/adserver/best_buy_ad_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2247191" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding />
         </state>
       </provider>
