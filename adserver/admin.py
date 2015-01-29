@@ -16,9 +16,9 @@ class ClickAdmin(admin.ModelAdmin):
     search_fields = ['idfa','product_id','advertiser_id','campaign_id','element_ids']
 
 class ProductAdmin(admin.ModelAdmin):
-    fields = ['product_name', 'product_id', 'product_price', 'advertiser_id', 'product_image_url' ]
-    list_display = ('product_name', 'product_id', 'product_name', 'product_price', 'advertiser_id', 'product_image_url')
-    search_fields = ('product_name', 'product_id', 'product_name', 'product_price', 'advertiser_id', 'product_image_url')
+    fields = ['product_name', 'product_id', 'product_price', 'advertiser_id', 'product_image_url', 'product_url' ]
+    list_display = ('product_name', 'product_id', 'product_name', 'product_price', 'advertiser_id', 'product_image_url', 'product_url')
+    search_fields = ('product_name', 'product_id', 'product_name', 'product_price', 'advertiser_id', 'product_image_url', 'product_url')
 
 class ElementAdmin(admin.ModelAdmin):
     fields = ['element_id', 'element_type', 'product_id', 'text', 'advertiser_id', 'campaign_id', 'impressions', 'clicks', 'conversions']

@@ -20,6 +20,7 @@ class Product(models.Model):
     product_price = models.DecimalField(max_digits=12, decimal_places=2)
     advertiser_id = models.CharField(max_length = 200)
     product_image_url = models.CharField(max_length = 2000)
+    product_url = models.CharField(max_length = 2000)
     def __unicode__(self):
         return self.product_name
 

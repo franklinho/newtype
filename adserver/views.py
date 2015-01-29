@@ -111,6 +111,7 @@ def ad(request):
             context = RequestContext(request, {
                 'product_name' : product.product_name,
                 'product_image_url': product.product_image_url,
+                'product_url' : product.product_url,
                 'cta': cta.text,
             })
         else:
@@ -128,6 +129,7 @@ def ad(request):
             context = RequestContext(request, {
                 'product_name' : product.product_name,
                 'product_image_url': product.product_image_url,
+                'product_url' : product.product_url,
                 'cta': cta.text,
             })
     else:
@@ -145,6 +147,7 @@ def ad(request):
         context = RequestContext(request, {
             'product_name' : product.product_name,
             'product_image_url': product.product_image_url,
+            'product_url' : product.product_url,
             'cta': cta.text,
         })
 
