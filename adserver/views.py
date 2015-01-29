@@ -26,7 +26,7 @@ def intent(request):
     # }
 
     if idfa is not None and product_id is not None and advertiser_id is not None and product_price is not None:
-        intents = Intent.objects.filter(idfa=idfa,product_id=product_id,advertiser_id=advertiser_id,product_price=product_price)
+        intents = Intent.objects.filter(idfa=idfa,product_id=product_id,advertiser_id=advertiser_id,product_price=product_price, converted=False)
 
         if intents.count() == 0:
             i = Intent(idfa=idfa, product_id=product_id, advertiser_id = advertiser_id, converted=False, product_price=product_price)
