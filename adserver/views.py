@@ -44,7 +44,7 @@ def conversion(request):
 
 
     if idfa is not None and product_id is not None and advertiser_id is not None:
-        intents = Intent.objects.filter(idfa=idfa,product_id=product_id,advertiser_id=advertiser_id)
+        intents = Intent.objects.filter(idfa=idfa,product_id=product_id,advertiser_id=advertiser_id).order_by("converted")
         print(intents)
         if intents.count() == 0:
             return HttpResponse("No associated retargeting intent. IDFA is %s. Product ID is %s. Advertiser ID is %s" % (idfa,product_id,advertiser_id))
