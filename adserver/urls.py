@@ -8,4 +8,5 @@ urlpatterns = patterns('',
                        url(r'^conv', views.conversion, name = 'conversion'),
                        url(r'^clk', views.click, name = 'click'),
                        url(r'^ad', views.ad, name = 'ad'),
+                       url(r'^pay', views.pay, name = 'pay'),
                        )

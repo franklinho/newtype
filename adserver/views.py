@@ -4,6 +4,10 @@ from django.template import Context, RequestContext, loader
 from django.shortcuts import render_to_response, get_object_or_404
 from adserver.models import Intent, Click, Product, Element, Campaign
 import random
+import stripe
+from flask import Flask
+from flask import request
+from flask import json
 
 
 # Create your views here.
@@ -156,3 +160,28 @@ def ad(request):
 
 
     return HttpResponse(template.render(context))
+
+def pay(request):
+
+    stripe.api_key = "sk_test_EaktGYpD3NOrDmOXXsFNeWji"
+
+
+    data = json.loads(request,raw_post_data)
+
+
+    token = data['stripeToken']
+    amount = data['amount']
+    description = data['description']
+
+    try:
+        charge = stripe.Charge.create(
+            amount=amount,
+            currency="usd",
+            card=token,
+            description=description
+        )
+    except stripe.CardError, e:
+    # The card has been declined
+        pass
+
+    return HttpResponse("Success!")
